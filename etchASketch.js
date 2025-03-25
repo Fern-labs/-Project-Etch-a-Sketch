@@ -16,9 +16,16 @@ function createDivRow(num) {
   }
 }
 
-// //PlaceHolder user input convert to input field
-// let userInput = prompt(
-//   "How big do you want your Canvas hint 16*16 Enter only one num"
-// );
-// let numTwice = parseInt(userInput * userInput);
-createDivRow(256);
+let userInput = prompt(
+  "How big do you want your Canvas hint 16*16 Enter only one num"
+);
+let numTwice = parseInt(userInput * userInput);
+createDivRow(numTwice);
+
+document.querySelectorAll("div").forEach((elem) => {
+  if (!elem.classList.contains("container")) {
+    elem.addEventListener("mouseover", () => {
+      elem.style.backgroundColor = "black";
+    });
+  }
+});
