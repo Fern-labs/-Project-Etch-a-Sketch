@@ -18,6 +18,7 @@ body {
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 div {
+  outline: groove 1px;
   flex-grow: 0;
   flex-shrink: 0;
   flex-wrap: wrap;
